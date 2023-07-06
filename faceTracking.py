@@ -19,6 +19,7 @@ def findFace(img):
         cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), 2)
 capture = cv2.VideoCapture(0)
 
+
 while True:
     _,img = capture.read()
     findFace(img)
